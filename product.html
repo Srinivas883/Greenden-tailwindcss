@@ -14,8 +14,8 @@
     <!-- Responsive Navbar -->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl cursor-pointer">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="size-6 w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6 w-6 h-6 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -32,63 +32,82 @@
         </ul>
     </nav>
 
+    <!-- side-navbar -->
+    <section id="sidenavbar" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000"
+        style="width: 50%;height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600 items-center">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
     <!-- Our Products search -->
     <section class="text-center mt-9">
         <h1 class="text-3xl font-bold text-center">Our Products</h1>
-        <input type="text" class="border border-black p-2 m-3" style="width: 80%;"
+        <input id="prosearch" type="text" class="border border-black p-2 m-3" style="width: 80%;"
             placeholder="Search for a product...."><br>
     </section>
 
     <!-- our products -->
     <section class="p-4 text-center">
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+        <div id="procontainer" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
             <div>
-                <img src="./images/Bestseller1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                <img src="./images/1 Alovera plant.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
-                <h1>Rose Plant</h1>
-                <p>$20</p>
+                <h1>Alovera Plant</h1>
+                <p>$16.00</p>
             </div>
             <div>
-                <img src="./images/Bestseller_2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                <img src="./images/2 Jade plant.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
-                <h1>Rose Plant</h1>
-                <p>$20</p>
+                <h1>Jade Plant</h1>
+                <p>$20.00</p>
             </div>
             <div>
-                <img src="./images/Bestseller_3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                <img src="./images/3 Pitcher plant.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
-                <h1>Rose Plant</h1>
-                <p>$20</p>
+                <h1>Pitcher Plant</h1>
+                <p>$32.50</p>
             </div>
             <div>
-                <img src="./images/Bestseller_4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                <img src="./images/4 Prayer plant.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
-                <h1>Rose Plant</h1>
-                <p>$20</p>
+                <h1>Prayer Plant</h1>
+                <p>$20.00</p>
             </div>
             <div>
-                <img src="./images/Bestseller_3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                <img src="./images/5 Rubber plant.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
-                <h1>Rose Plant</h1>
-                <p>$20</p>
+                <h1>Rubber Plant</h1>
+                <p>$27.50</p>
             </div>
             <div>
-                <img src="./images/Bestseller_4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                <img src="./images/6 snake plant.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
-                <h1>Rose Plant</h1>
-                <p>$20</p>
+                <h1>Snake Plant</h1>
+                <p>$20.00</p>
             </div>
             <div>
-                <img src="./images/Bestseller_2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                <img src="./images/7 Spider plant.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
-                <h1>Rose Plant</h1>
-                <p>$20</p>
+                <h1>Spider Plant</h1>
+                <p>$15.00</p>
             </div>
             <div>
-                <img src="./images/Bestseller1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                <img src="./images/8 ZZ plant.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
-                <h1>Rose Plant</h1>
-                <p>$20</p>
+                <h1>ZZ Plant</h1>
+                <p>$37.50</p>
             </div>
         </div>
     </section>
@@ -101,7 +120,7 @@
             high-quality, sustainable greenery for every space in your home.</p>
         <p>&copy; 2021 Greenden.com</p>
     </section>
-
+    <script src="product.js"></script>
 </body>
 
 </html>
